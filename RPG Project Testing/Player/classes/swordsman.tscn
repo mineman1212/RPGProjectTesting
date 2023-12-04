@@ -17,3 +17,9 @@ shape = SubResource("RectangleShape2D_kcwsm")
 texture = ExtResource("1_4l0vi")
 hframes = 6
 vframes = 5
+
+[node name="primaryCD" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="timeout" from="primaryCD" to="." method="_on_primary_cd_timeout"]
