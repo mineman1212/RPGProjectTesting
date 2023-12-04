@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ciqr0vdrl526w"]
+
+[ext_resource type="Texture2D" uid="uid://bm8pv7yut37y8" path="res://resources/graphics/ground/dirt.png" id="1_7ii5u"]
+[ext_resource type="PackedScene" uid="uid://chhn828hajpxe" path="res://Player/classes/swordsman.tscn" id="2_mgemk"]
+
+[node name="TestSpace" type="Node2D"]
+
+[node name="GroundSprite" type="Sprite2D" parent="."]
+position = Vector2(1876, 1429.5)
+scale = Vector2(12.1818, 9.26948)
+texture = ExtResource("1_7ii5u")
+
+[node name="Swordsman" parent="." instance=ExtResource("2_mgemk")]
+position = Vector2(178, 87)
