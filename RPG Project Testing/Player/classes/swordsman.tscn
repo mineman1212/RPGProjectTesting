@@ -13,7 +13,7 @@ script = ExtResource("1_7q27x")
 position = Vector2(-3.5, 5)
 shape = SubResource("RectangleShape2D_kcwsm")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="CharacterSprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_4l0vi")
 hframes = 6
 vframes = 5
@@ -22,4 +22,7 @@ vframes = 5
 wait_time = 2.0
 one_shot = true
 
+[node name="breath" type="Timer" parent="."]
+
 [connection signal="timeout" from="primaryCD" to="." method="_on_primary_cd_timeout"]
+[connection signal="timeout" from="breath" to="." method="_on_breath_timeout"]
